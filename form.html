@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Каталог</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class='thetop'></div>
+    <div class='scrolltop'>
+        <div class='muve-top'></div>
+    </div>
+    <header>
+        <a href="markup.html" class="markup-link">markup</a>
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+
+                    <picture>
+                        <source media="(min-width:992px)" srcset="assets/img/logo-desktop.svg">
+                        <source media="(min-width:768px)" srcset="assets/img/logo-tablet.svg">
+                        <img src="assets/img/logo-mobile.svg" alt="logo">
+
+                    </picture>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">каталог продукции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">подбор программы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="wrapper form">
+        <div class="container">
+            <h1 class="form-title">Подбор программы</h1>
+            <div class="form-description">
+                <h4 class="form-title-block">Заполните анкету, и мы подберем программу питания для вашего кота</h4>
+            </div>
+            <form class="form-program">
+                <div class="form-row">
+                    <div class="input-box">
+                        <div class="input-row">
+                            <label for="fname">ИМЯ:*</label>
+                            <input type="text" id="fname" name="fname" placeholder="БАРСИК">
+                        </div>
+                        <div class="input-row">
+                            <label for="weight">Вес (кг):*</label>
+                            <input type="text" id="weight" name="lname" placeholder="7">
+                        </div>
+                        <div class="input-row">
+                            <label for="age">Возраст (лет):</label>
+                            <input type="text" id="age" name="lname" placeholder="7">
+                        </div>
+                    </div>
+                    <div class="radio-box">
+                        <div>
+                            <input type="radio" id="weight-loss" name="program" value="weight loss">
+                            <label for="weight-loss">Похудение</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="mass-gain" name="program" value="mass gain">
+                            <label for="mass-gain">Набор массы</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="other" name="program" value="other">
+                            <label for="other">Не знаю (Нужен ваш совет)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <h2 class="form-row-title"><span>Контактные данные (владельца кота)</span></h2>
+                    <div class="input-row">
+                        <div class="contact">
+                            <div class="email">
+                                <label for="email">E-mail:*</label>
+                                <input type="email" id="email" name="email" placeholder="кuklachev@gmail.com">
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Телефон:*</label>
+                                <input type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <h2 class="form-row-title"><span>Комментарий</span></h2>
+                    <div class="input-row">
+                        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <h2 class="form-row-title"><span>Дополнительно</span></h2>
+                    <div class="check-box">
+                        <div>
+                            <input id="checkbox" type="checkbox" name="sweetener" checked="checked">
+                            <label for="checkbox">сахарозаменитель</label>
+                        </div>
+                        <div>
+                            <input id="checkbox2" type="checkbox" name="water">
+                            <label for="checkbox2">питьевая вода</label>
+                        </div>
+                        <div>
+                            <input id="checkbox3" type="checkbox" name="milk">
+                            <label for="checkbox3">молоко</label>
+                        </div>
+                        <div>
+                            <input id="checkbox4" type="checkbox" name="vitamins">
+                            <label for="checkbox4">витамины</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-block">
+                    <input class="btn btn-primary" type="submit" value="отправить заявку">
+                    <div class="span"><span>* __ Обязательные поля</span></div>
+                </div>
+            </form>
+        </div>
+        <div class="map">
+            <div class="map-info">
+                <div class="map-title">
+                    приглашаем 
+                    к сотрудничеству 
+                    дилеров!
+                </div>
+                <address>
+                    <span class="street">Сумська, 81</span>
+                    <span class="city">Харьков</span>
+                </address>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82077.89130312446!2d36.2779189!3d49.9938449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1000e0da5b9%3A0x7bc3ddab9336dd55!2z0KbQtdC90YLRgNCw0LvRjNC90YvQuSDQv9Cw0YDQuiDQutGD0LvRjNGC0YPRgNGLINC4INC-0YLQtNGL0YXQsCDQuNC80LXQvdC4INCcLiDQk9C-0YDRjNC60L7Qs9C-!5e0!3m2!1sru!2sua!4v1664802472380!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="assets/img/footer-logo.svg" alt="logo">
+            </div>
+            <div class="footer-social-networks-item">
+                <ul class="footer-social-networks">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com">
+                            <img width="25" height="25" src="assets/img/icon_facebook.svg" alt="facebook"> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com">
+                            <img width="25" height="25" src="assets/img/icon_instagram.svg" alt="instagram"> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.vk.com">
+                            <img width="25" height="25" src="assets/img/icon_vkontakte.svg" alt="vk"> </a>
+                    </li>
+                </ul>
+            </div>
+
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="assets/js/bootstrap.min.js"></script>
+    <script defer src="assets/js/slick.min.js"></script>
+    <script async src="assets/js/jquery.fancybox.min.js"></script>
+    <script defer src="assets/js/jquery.nice-select.min.js"></script>
+    <script defer src="assets/js/jquery-match-height.js"></script>
+    <script async src="assets/js/global.js"></script>
+
+</body>
+
+</html>
